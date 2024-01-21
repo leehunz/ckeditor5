@@ -1,0 +1,33 @@
+# All "dot directories".
+.*/**
+!.github/**
+!.husky/**
+!.circleci/**
+
+# Generated automatically via CircleCI.
+.circleci/config-tests.yml
+
+# Files associated with CKEditor 5 repository.
+**/node_modules
+build/
+!packages/ckeditor5-build-*/build
+docs/api/output.json
+yarn.lock
+package-lock.json
+coverage/
+
+# Files associated with external repositories.
+external/
+mrgit.json
+
+# Files associated with specific development environments.
+.DS_Store
+.idea
+.vscode
+
+# Prepared files to publish to npm.
+/release/
+
+# Ignore yalc
+.yalc
+yalc.lock
