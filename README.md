@@ -1,4 +1,7 @@
-CKEditor&nbsp;5 classic editor build
+Custom Build Project for CKEditor&nbsp;5
+========================================
+
+# CKEditor&nbsp;5 classic editor build
 ========================================
 
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)

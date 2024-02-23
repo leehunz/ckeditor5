@@ -1,6 +1,8 @@
 /**
  * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * 
+ * Modified by Hunjoo Lee (leehunz_AT_naver_com)
  */
 
 // The editor creator to use.
@@ -8,13 +10,9 @@ import { ClassicEditor as ClassicEditorBase } from '@ckeditor/ckeditor5-editor-c
 
 import { Alignment } from '@ckeditor/ckeditor5-alignment';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
-// import { CKFinderUploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
 import { Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-// import { CKBox } from '@ckeditor/ckeditor5-ckbox';
-// import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
-// import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
 import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageUpload, PictureEditing, ImageResizeEditing, ImageResizeHandles } from '@ckeditor/ckeditor5-image';
 import { SimpleUploadAdapter } from '@ckeditor/ckeditor5-upload';
@@ -28,6 +26,12 @@ import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableCellProperties, TableProperties, TableColumnResize, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
+
+// Do not import paid packages...
+// import { CKFinderUploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
+// import { CKBox } from '@ckeditor/ckeditor5-ckbox';
+// import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
+// import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 // import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 
 export default class ClassicEditor extends ClassicEditorBase {
@@ -70,6 +74,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 
 	public static override defaultConfig = {
 		toolbar: {
+			// Configuring menu to be displayed...
 			items: [
 				'undo', 'redo',
 				'|', 'fontSize', 'fontColor', 'fontBackgroundColor',
@@ -106,7 +111,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 				'tableCellProperties'
 			]
 		},
-		// This value must be kept in sync with the language defined in webpack.config.js.
+		// This value must be kept in sync with the language defined in webpack.config.js. (Korean)
 		language: 'ko'
 	};
 }
