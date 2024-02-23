@@ -1,8 +1,6 @@
 Custom Build Project for CKEditor&nbsp;5
 ========================================
-[![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
-[![Coverage Status](https://coveralls.io/repos/github/ckeditor/ckeditor5/badge.svg?branch=master)](https://coveralls.io/github/ckeditor/ckeditor5?branch=master)
-[![Build Status](https://travis-ci.com/ckeditor/ckeditor5.svg?branch=master)](https://app.travis-ci.com/github/ckeditor/ckeditor5)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/leehunz/ckeditor5)
 
 This project is created and developed to help building CKEditor 5 with preferred plugins and customization.
 This is based on CKEditor 5 Classic Build: https://github.com/ckeditor/ckeditor5/tree/master/packages/ckeditor5-build-classic
